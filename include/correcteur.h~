@@ -1,0 +1,11 @@
+#ifndef __CORRECTEUR__
+#define __CORRECTEUR__
+
+typedef uneFile (*correcteur)(mot,dictionnaire);
+
+uneFile correcteurSimple (mot unMot, dictionnaire dico);
+void correctionParRemplacement (uneFile propositions, mot unMot);
+void correctionParSuppression (uneFile propositions, mot unMot);
+void correctionParInsertion (uneFile propositions, mot unMot);
+void correctionParInversion (uneFile propositions, mot unMot);
+#endif
